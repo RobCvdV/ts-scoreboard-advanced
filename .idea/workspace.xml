@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Wt41cLWfHdj2IzSpijWifuqNUM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -16,7 +19,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MendriX_Dev/MMX-Release/MMX" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -28,11 +44,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579955342459</updated>
-      <workItem from="1579955343802" duration="837000" />
+      <workItem from="1579955343802" duration="1181000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580024840726">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1580024840726" />
+    <state width="1636" height="280" key="GridCell.Tab.0.bottom" timestamp="1580025067111">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1636" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1580025067111" />
+    <state width="1636" height="280" key="GridCell.Tab.0.center" timestamp="1580025067110">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1636" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1580025067110" />
+    <state width="1636" height="280" key="GridCell.Tab.0.left" timestamp="1580025067109">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1636" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1580025067109" />
+    <state width="1636" height="280" key="GridCell.Tab.0.right" timestamp="1580025067110">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1636" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1580025067110" />
   </component>
 </project>
