@@ -1,0 +1,60 @@
+/*.plus-button {*/
+/*    border: 1px solid #ccc;*/
+/*    color: #ccc;*/
+/*    background: transparent;*/
+/*    padding: 8px 18px;*/
+
+/*    font-size: 150%;*/
+/*}*/
+
+button.toggle-button {
+    flex: 0;
+    border: 1px solid #fff;
+    font-size: 150%;
+    margin: 12px;
+    cursor: pointer;
+    height: auto;
+    /*max-height: 60px;*/
+    background-color: #282c34;
+    color: #fff;
+    position: relative;
+
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button.toggle-button > .toggle-button-light {
+    /*position: relative;*/
+    /*float: right;*/
+    /*top: calc(50% - 0.25em);*/
+    flex: 1;
+    height: .5em;
+    width: .5em;
+    /*transform: translateY(-50%);*/
+    /*top: 19px;*/
+    background: darkgreen;
+    border: .05em solid darkgrey;
+    border-radius: 1000px;
+    margin-left: .3em;
+}
+button.toggle-button > .toggle-button-light.on {
+    background: greenyellow;
+}
+
+button.toggle-button:hover > .toggle-button-light{
+    border-color: white;
+}
+button.toggle-button:focus {
+    visibility: hidden;
+}
+
+/*.scoreboard > button.toggle-button {*/
+/*    !*height: 30px;*!*/
+/*    !*width: 30px;*!*/
+/*    font-size: 100%;*/
+/*    flex: 1;*/
+/*    margin: 0;*/
+
+/*}*/

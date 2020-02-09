@@ -1,0 +1,12 @@
+.user-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200pt;
+    margin: .5em auto;
+
+    .user-item {
+        margin: .2em 0;
+    }
+}

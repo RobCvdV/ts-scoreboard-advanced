@@ -1,0 +1,37 @@
+/*.plus-button {*/
+/*    border: 1px solid #ccc;*/
+/*    color: #ccc;*/
+/*    background: transparent;*/
+/*    padding: 8px 18px;*/
+
+/*    font-size: 150%;*/
+/*}*/
+
+button.plus-button {
+    flex: 1;
+    border: 1px solid #fff;
+    font-size: 150%;
+    margin: 12px;
+    cursor: pointer;
+    max-width: 50px;
+    background: transparent;
+    background: #33373f;
+    color: #fff;
+    cursor: default;
+}
+
+button.plus-button.disabled {
+    /*border-color: #2f333b;*/
+    /*color: #2f333b;*/
+    /*background: darkgray;*/
+    opacity: .4;
+}
+
+button.plus-button:hover:not(.disabled) {
+    cursor: pointer;
+    background-color: #181c24;
+}
+
+button.plus-button:focus {
+    visibility: hidden;
+}

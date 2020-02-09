@@ -1,0 +1,18 @@
+li.player {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+li.player p {
+    flex: 1;
+    padding: 12px 24px;
+    font-size: 150%;
+}
+li.player p.name {
+    font-weight: bold;
+    text-align: left;
+}
+li.player p.score {
+    text-align: right;
+}
