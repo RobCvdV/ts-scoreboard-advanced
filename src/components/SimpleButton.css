@@ -8,12 +8,16 @@
 /*}*/
 
 button.plus-button {
-    flex: 1;
+    flex: none;
     border: 1px solid #fff;
     font-size: 150%;
+    width: 1.7em;
+    height: 1.7em;
+    padding: 0;
     margin: 12px;
+
     cursor: pointer;
-    max-width: 50px;
+    /*max-width: 50px;*/
     background: transparent;
     background: #33373f;
     color: #fff;
@@ -30,6 +34,9 @@ button.plus-button.disabled {
 button.plus-button:hover:not(.disabled) {
     cursor: pointer;
     background-color: #181c24;
+
+    font-weight: bolder;
+    color: white;
 }
 
 button.plus-button:focus {

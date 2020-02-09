@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, SyntheticEvent } from 'react';
+import './AddPlayer.css';
 
 interface IAddPlayerState {
     name: string;
 }
 
-export default class AddPlayer extends Component<{}, IAddPlayerState> {
+interface IAddPlayerProps {
+    addPlayer: (name: string) => void
+}
+
+export default class AddPlayer extends Component<IAddPlayerProps, IAddPlayerState> {
     public state: IAddPlayerState = {
         name: '',
     }
@@ -29,12 +34,15 @@ export default class AddPlayer extends Component<{}, IAddPlayerState> {
 
     private handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-        console.log('form submitted...');
+        console.log('Adding player with name: ', this.state.name);
+        this.props.addPlayer(this.state.name);
+        //clear input
+        this.setState({name:''});
     }
 
-    private handleChange(event: any) {
+    private handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         this.setState({
-            name: event.target.value,
-        })
+            name: event.currentTarget.value,
+        });
     }
 }

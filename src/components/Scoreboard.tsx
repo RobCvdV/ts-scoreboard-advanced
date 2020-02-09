@@ -3,7 +3,6 @@ import Player, { IPlayer, IPlayerProps } from './Player';
 import Title from "./Title";
 import './Scoreboard.css';
 import { ScoreRandomAdd } from "./ScoreRandomAdd";
-import PlusButton from "./PlusButton";
 import ToggleButton from "./ToggleButton";
 import AddPlayer from "./AddPlayer";
 
@@ -12,7 +11,7 @@ interface IScoreboardState {
     isRandomizing: boolean;
 }
 
-const players: IPlayer[] = [
+const playersInitialState: IPlayer[] = [
     {
         id: 1,
         name: 'Arien',
@@ -32,7 +31,7 @@ const players: IPlayer[] = [
 
 export default class Scoreboard extends Component {
     public state: Readonly<IScoreboardState> = {
-        players: players,
+        players: playersInitialState,
         isRandomizing: false
     };
 
@@ -49,7 +48,10 @@ export default class Scoreboard extends Component {
                     this.setState({
                         players: playersOut
                     });
-                });
+                },
+                50,
+                1000
+            );
             this.setState({isRandomizing: true});
         }
     }
@@ -69,8 +71,28 @@ export default class Scoreboard extends Component {
         });
     };
 
+    public addPlayer = (name: string) => {
+        const newPlayer = {
+            id: this.state.players.reduce((maxId, player) => {
+                return Math.max(maxId, player.id ? player.id : 0);
+            }, 0) + 1,
+            name: name,
+            score: 0
+        }
+        this.setState({
+            players: this.state.players.concat(newPlayer)
+        })
+    };
+
+    public deletePlayer = (id: number) => {
+        this.setState({
+            players: this.state.players.filter(value => value.id !== id)
+        })
+    }
+
     public renderPlayer = (player: IPlayer) => (<Player
         updatePlayerScore={this.state.isRandomizing ? undefined : this.updatePlayerScore}
+        deletePlayer={this.deletePlayer}
         key={player.id}
         //rest of the porps
         {...player}
@@ -80,14 +102,20 @@ export default class Scoreboard extends Component {
         const {players} = this.state;
         return (
             <div className="scoreboard">
-                <Title content={'Scoreboard'}/>
-                <ToggleButton content={'See score comming'}
-                              state={this.state.isRandomizing ? 'on' : 'off'}
-                              onClick={this.toggleRandomAddHandler}/>
-                <ul>
-                    {players.sort((a, b) => b.score - a.score).map(this.renderPlayer)}
-                </ul>
-                <AddPlayer />
+                <div className={'scoreboard-header'}>
+                    <Title content={'Scoreboard'}/>
+                    <ToggleButton content={'See scores coming in'}
+                                  state={this.state.isRandomizing ? 'on' : 'off'}
+                                  onClick={this.toggleRandomAddHandler}/>
+                </div>
+                <div className={"scoreboard-content"}>
+                    <ul className={"scoreboard-list"}>
+                        {players.sort((a, b) => b.score - a.score).map(this.renderPlayer)}
+                    </ul>
+                </div>
+                <div className={"scoreboard-footer"}>
+                    <AddPlayer addPlayer={this.addPlayer}/>
+                </div>
             </div>
         )
     }

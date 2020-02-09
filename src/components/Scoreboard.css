@@ -1,16 +1,59 @@
 .scoreboard {
+    position: fixed;
+    top: 0;
     background-color: #282c34;
     min-height: 100vh;
+    height: 100vh;
+    /*height: 100%;*/
+    width: 100%;
+    font-size: calc(8px + 1vmin);
+    color: white;
+    overflow: hidden;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    justify-content: space-between;
+
 }
-.scoreboard ul {
+
+.scoreboard .scoreboard-header {
+    /*flex: 0;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    order: 1;
+    margin: 0 auto;
+    flex-shrink: 0;
+    flex-basis: 10em;
+    background: #282c34;
+    width: 100%;
+    z-index: 10;
     padding: 0;
 }
-.scoreboard h1 {
-    text-align: center;
+
+.scoreboard .scoreboard-content {
+    order: 2;
+    width: 90%;
+    overflow-y: scroll;
+}
+
+.scoreboard ul.scoreboard-list {
+    margin: 0 auto;
+    height: auto;
+    max-width: 400pt;
+    padding: 0;
+}
+
+.scoreboard .scoreboard-footer {
+    /*position: fixed;*/
+    order: 3;
+    flex-shrink: 0;
+    flex-basis: 10em;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0;
+    background: #282c34;
+}
+.scoreboard .add-player {
 }

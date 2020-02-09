@@ -3,11 +3,13 @@ li.player {
     align-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
+
 }
 li.player p {
     flex: 1;
-    padding: 12px 24px;
+    padding: 2px 24px;
     font-size: 150%;
+    margin: 0 10px;
 }
 li.player p.name {
     font-weight: bold;
