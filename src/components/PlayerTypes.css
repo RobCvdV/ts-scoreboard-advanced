@@ -1,0 +1,21 @@
+.player-types {
+    height: 100%;
+}
+.player-types ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.player-types ul li {
+    padding: .1em;
+    margin: .1em;
+    border: 1pt solid gray;
+    border-radius: .1em;
+    flex: 0 0 1em;
+    /*max-width: 100pt;*/
+    display: block;
+
+}

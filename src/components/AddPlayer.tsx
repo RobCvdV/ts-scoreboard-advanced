@@ -1,4 +1,4 @@
-import React, { Component, SyntheticEvent } from 'react';
+import React, { Component } from 'react';
 import './AddPlayer.css';
 
 interface IAddPlayerState {

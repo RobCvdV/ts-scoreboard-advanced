@@ -1,29 +1,25 @@
 import React, { Component } from 'react';
 import './Player.css';
 import SimpleButton from "./SimpleButton";
+import { IPlayer } from "../entities/player";
 
-export interface IPlayer {
-    id?: number;
-    name: string;
-    score: number;
-}
 export interface IPlayerProps extends IPlayer {
-    updatePlayerScore?: (id: number, score: number) => void;
+    addPlayerScore?: (id: number, add: number) => void;
     deletePlayer?: (id: number) => void;
 }
 
 export default class Player extends Component<IPlayerProps> {
     public static defaultProps = {
-        score: 0,
+        scorePerHit: 1,
     };
 
     public handleUpdate = () => {
-        if (!this.props.updatePlayerScore) return;
+        if (!this.props.addPlayerScore) return;
 
-        const { id, score } = this.props;
+        const { id } = this.props;
         if (!id) return;
 
-        this.props.updatePlayerScore(id, score + 1);
+        this.props.addPlayerScore(id, 1);
     };
 
     public handleDeletePlayer = () => {
@@ -47,7 +43,7 @@ export default class Player extends Component<IPlayerProps> {
                 {<SimpleButton
                     content={'+'}
                     onClick={this.handleUpdate}
-                    disabled={this.props.updatePlayerScore === undefined}/>}
+                    disabled={this.props.addPlayerScore === undefined}/>}
             </li>
         );
     }

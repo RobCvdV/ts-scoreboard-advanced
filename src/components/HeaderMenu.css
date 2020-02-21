@@ -1,0 +1,19 @@
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 2em;
+
+    background: black;
+    color: grey;
+}
+
+.header-menu > a {
+    text-decoration: none;
+    color: grey;
+}
+.header-menu > a:hover {
+    color: yellow;
+}

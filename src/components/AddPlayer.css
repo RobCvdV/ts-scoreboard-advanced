@@ -19,7 +19,7 @@
 
 .add-player input {
     flex: 1;
-    font-size: 150%;
+    font-size: 120%;
     border: 1px solid #fff;
     padding: 10px 5px;
     background-color: #282c34;
@@ -39,4 +39,5 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-left: 10px;
+
 }

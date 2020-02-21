@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+A Typescript React Redux project for learning to use react with redux. 
+I also used typed-actions to simplify action and reducer creation and reducing boilerplate code.
+Check https://github.com/piotrwitek/typesafe-actions fro more info
+And https://github.com/piotrwitek for a lot more tutorials and documentation. 
+Could also use rematch  
+
 ## Available Scripts
 
 In the project directory, you can run:

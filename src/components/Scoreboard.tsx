@@ -1,112 +1,39 @@
 import React, { Component } from 'react';
-import Player, { IPlayer, IPlayerProps } from './Player';
+import Player from './Player';
 import Title from "./Title";
 import './Scoreboard.css';
-import { ScoreRandomAdd } from "./ScoreRandomAdd";
 import ToggleButton from "./ToggleButton";
 import AddPlayer from "./AddPlayer";
+import { IPlayer } from "../entities/player";
 
-interface IScoreboardState {
+export interface IScoreboardProps {
     players: IPlayer[];
     isRandomizing: boolean;
+    addPlayerScore: (id: number, add: number) => void;
+    deletePlayer: (id: number) => void;
+    addPlayer: (name: string) => void;
+    toggleRandomAddHandler: () => void;
 }
 
-const playersInitialState: IPlayer[] = [
-    {
-        id: 1,
-        name: 'Arien',
-        score: 1,
-    },
-    {
-        id: 2,
-        name: 'Mimi',
-        score: 5,
-    },
-    {
-        id: 3,
-        name: 'Rein',
-        score: 4,
-    }
-];
-
-export default class Scoreboard extends Component {
-    public state: Readonly<IScoreboardState> = {
-        players: playersInitialState,
-        isRandomizing: false
-    };
-
-    private randomizeScores = new ScoreRandomAdd();
-
-    private toggleRandomAddHandler = () => {
-        if (this.randomizeScores.isRandomizing()) {
-            this.randomizeScores.stopRandomlyAddingToScores();
-            this.setState({isRandomizing: false});
-        } else {
-            this.randomizeScores.startRandomlyAddingToScores(
-                () => this.state.players,
-                (playersOut) => {
-                    this.setState({
-                        players: playersOut
-                    });
-                },
-                50,
-                1000
-            );
-            this.setState({isRandomizing: true});
-        }
-    }
-
-    public updatePlayerScore = (id: number, score: number) => {
-        this.setState({
-            players: this.state.players.map(player => {
-                if (player.id === id) {
-                    return {
-                        ...player,
-                        score,
-                    };
-                } else {
-                    return player;
-                }
-            }),
-        });
-    };
-
-    public addPlayer = (name: string) => {
-        const newPlayer = {
-            id: this.state.players.reduce((maxId, player) => {
-                return Math.max(maxId, player.id ? player.id : 0);
-            }, 0) + 1,
-            name: name,
-            score: 0
-        }
-        this.setState({
-            players: this.state.players.concat(newPlayer)
-        })
-    };
-
-    public deletePlayer = (id: number) => {
-        this.setState({
-            players: this.state.players.filter(value => value.id !== id)
-        })
-    }
+export default class Scoreboard extends Component<IScoreboardProps> {
 
     public renderPlayer = (player: IPlayer) => (<Player
-        updatePlayerScore={this.state.isRandomizing ? undefined : this.updatePlayerScore}
-        deletePlayer={this.deletePlayer}
+        addPlayerScore={this.props.isRandomizing ? undefined : this.props.addPlayerScore}
+        deletePlayer={this.props.deletePlayer}
         key={player.id}
         //rest of the porps
         {...player}
     />);
 
     render() {
-        const {players} = this.state;
+        const {players} = this.props;
         return (
             <div className="scoreboard">
                 <div className={'scoreboard-header'}>
                     <Title content={'Scoreboard'}/>
                     <ToggleButton content={'See scores coming in'}
-                                  state={this.state.isRandomizing ? 'on' : 'off'}
-                                  onClick={this.toggleRandomAddHandler}/>
+                                  state={this.props.isRandomizing ? 'on' : 'off'}
+                                  onClick={this.props.toggleRandomAddHandler}/>
                 </div>
                 <div className={"scoreboard-content"}>
                     <ul className={"scoreboard-list"}>
@@ -114,7 +41,7 @@ export default class Scoreboard extends Component {
                     </ul>
                 </div>
                 <div className={"scoreboard-footer"}>
-                    <AddPlayer addPlayer={this.addPlayer}/>
+                    <AddPlayer addPlayer={this.props.addPlayer}/>
                 </div>
             </div>
         )
