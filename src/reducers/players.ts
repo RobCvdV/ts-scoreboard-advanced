@@ -44,6 +44,7 @@ const reducer = createReducer<IPlayersState, TPlayersActions>(initialState)
             playerList: state.playerList.filter(pl => pl.id !== action.payload)
         }
     })
+    .handleAction()
 ;
 
 export default reducer;

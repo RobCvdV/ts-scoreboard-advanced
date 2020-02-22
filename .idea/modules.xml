@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../ts-scoreboard/.idea/ts-scoreboard.iml" filepath="$PROJECT_DIR$/../ts-scoreboard/.idea/ts-scoreboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ts-scoreboard-redux-typed-actions.iml" filepath="$PROJECT_DIR$/.idea/ts-scoreboard-redux-typed-actions.iml" />
     </modules>
   </component>
 </project>

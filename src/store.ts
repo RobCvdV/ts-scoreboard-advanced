@@ -25,13 +25,15 @@ export interface IRootState {
 const indexedDbStorage = createIdbStorage({
     name: 'Scoreboard-redux-persist-indexed-db',
     storeName: 'keyval',
+
 });
 
 const persistConfig = {
     key: 'root',
-    storage: indexedDbStorage, //use default 'storage' for localStorage
-    serialize: false, // Data serialization is not required and disabling it allows you to inspect storage value in DevTools
-    // version: 1,
+    // storage,  //use for local storage instead of indexed DB
+    storage: indexedDbStorage, // indexed db ,
+    serialize: true, // Data serialization is not required and disabling it allows you to inspect storage value in DevTools
+    // version: 1, //seems to break persistence if no migration is provided (seems logical. state is overwritten
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
