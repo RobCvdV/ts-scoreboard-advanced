@@ -1,29 +1,22 @@
 import { AsyncActionCreatorBuilder, createAction, createAsyncAction } from 'typesafe-actions';
-import { IPlayer } from "../entities/player";
+import { IPlayerScorePayload, IPlayer, IAddRandomScoresPayload } from "../entities/player";
 
 export const addPlayer = createAction('players/ADD')<IPlayer>();
 export const addPlayerWithName = createAction('players/ADD_WITH_NAME')<string>();
 
 export const deletePlayer = createAction('players/DELETE')<number>();
 
-interface IAddPlayerScorePayload  {
-    playerId: number;
-    add: number;
-}
-export const addPlayerScore = createAction('players/ADD_SCORE')<IAddPlayerScorePayload>();
+export const addPlayerScore = createAction('players/ADD_SCORE')<IPlayerScorePayload>();
+export const setPlayerScore = createAction('players/SET_SCORE')<IPlayerScorePayload>();
 
-interface IAddRandomScoresPayload {
-    amountMax: number;
-    intervalInSeconds: number;
-    exponentialAdding: number
-}
+export const startRandomlyAddingPlayerScores =  createAction('players/START_ADDING_RANDOM_SCORES')<IAddRandomScoresPayload>();
+export const stopRandomlyAddingPlayerScores =  createAction('players/STOP_ADDING_RANDOM_SCORES')<undefined>();
 
-// 'players/START_ADD_RANDOM_SCORES'
-export const startRandomlyAddingPlayerScores = createAsyncAction(
-    'START_ADD_RANDOM_SCORES_REQUEST',
-    'START_ADD_RANDOM_SCORES_SUCCESS',
-    'START_ADD_RANDOM_SCORES_FAILURE'
-)<IAddPlayerScorePayload, {}, Error>();
+//     createAsyncAction(
+//     'START_ADD_RANDOM_SCORES_REQUEST',
+//     'START_ADD_RANDOM_SCORES_SUCCESS',
+//     'START_ADD_RANDOM_SCORES_FAILURE'
+// )<IAddPlayerScorePayload, {}, Error>();
 
 
 // needs redux-observable

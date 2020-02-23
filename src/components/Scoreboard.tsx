@@ -5,6 +5,7 @@ import './Scoreboard.css';
 import ToggleButton from "./ToggleButton";
 import AddPlayer from "./AddPlayer";
 import { IPlayer } from "../entities/player";
+import SimpleButton from "./SimpleButton";
 
 export interface IScoreboardProps {
     players: IPlayer[];
@@ -13,6 +14,8 @@ export interface IScoreboardProps {
     deletePlayer: (id: number) => void;
     addPlayer: (name: string) => void;
     toggleRandomAddHandler: () => void;
+    resetPlayerScores: () => void;
+    clearBoard:() => void;
 }
 
 export default class Scoreboard extends Component<IScoreboardProps> {
@@ -31,9 +34,14 @@ export default class Scoreboard extends Component<IScoreboardProps> {
             <div className="scoreboard">
                 <div className={'scoreboard-header'}>
                     <Title content={'Scoreboard'}/>
-                    <ToggleButton content={'See scores coming in'}
-                                  state={this.props.isRandomizing ? 'on' : 'off'}
-                                  onClick={this.props.toggleRandomAddHandler}/>
+                    <div className={'scoreboard-menu-buttons'}>
+                        <ToggleButton
+                            content={'See scores coming in'}
+                            state={this.props.isRandomizing ? 'on' : 'off'}
+                            onClick={this.props.toggleRandomAddHandler}/>
+                        <SimpleButton content={'Reset Scores'} onClick={this.props.resetPlayerScores} />
+                        <SimpleButton content={'Clear Board'} onClick={this.props.clearBoard} disabled={this.props.isRandomizing}/>
+                    </div>
                 </div>
                 <div className={"scoreboard-content"}>
                     <ul className={"scoreboard-list"}>

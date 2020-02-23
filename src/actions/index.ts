@@ -4,3 +4,5 @@ import { ActionType } from "typesafe-actions";
 
 export type TPlayersActions = ActionType<typeof players>;
 export type TScoreboardSettingsActions = ActionType<typeof scoreboardSettings>;
+
+export type TRootAction = TPlayersActions & TScoreboardSettingsActions;

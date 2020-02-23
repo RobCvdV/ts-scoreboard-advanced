@@ -1,4 +1,4 @@
-/*.plus-button {*/
+/*.simple-button {*/
 /*    border: 1px solid #ccc;*/
 /*    color: #ccc;*/
 /*    background: transparent;*/
@@ -10,7 +10,7 @@
 button.toggle-button {
     flex: 0;
     font-size: 150%;
-    margin: .5em auto;
+    margin: .5em;
     cursor: pointer;
     height: auto;
     padding: .5em 1.5em ;

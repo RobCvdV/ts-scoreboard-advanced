@@ -20,6 +20,16 @@
     justify-content: space-between;
 }
 
+.scoreboard .scoreboard-menu-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.scoreboard .scoreboard-menu-buttons > * {
+    flex: 1;
+}
+
 .scoreboard .scoreboard-header {
     /*flex: 0;*/
     /*position: fixed;*/

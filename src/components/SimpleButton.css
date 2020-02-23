@@ -1,4 +1,4 @@
-/*.plus-button {*/
+/*.simple-button {*/
 /*    border: 1px solid #ccc;*/
 /*    color: #ccc;*/
 /*    background: transparent;*/
@@ -7,14 +7,15 @@
 /*    font-size: 150%;*/
 /*}*/
 
-button.plus-button {
+button.simple-button {
     flex: none;
     border: 1px solid #fff;
     font-size: 150%;
     width: 1.7em;
-    height: 1.7em;
+    height: auto;
     padding: 0;
-    margin: 12px;
+    margin: .5em;
+    padding: .5em 1.5em;
 
     cursor: pointer;
     /*max-width: 50px;*/
@@ -24,14 +25,20 @@ button.plus-button {
     cursor: default;
 }
 
-button.plus-button.disabled {
+button.simple-button.square {
+    height: 1.7em;
+    width: 1.7em;
+    padding: 0;
+}
+
+button.simple-button.disabled {
     /*border-color: #2f333b;*/
     /*color: #2f333b;*/
     /*background: darkgray;*/
     opacity: .4;
 }
 
-button.plus-button:hover:not(.disabled) {
+button.simple-button:hover:not(.disabled) {
     cursor: pointer;
     background-color: #181c24;
 
@@ -39,6 +46,6 @@ button.plus-button:hover:not(.disabled) {
     color: white;
 }
 
-button.plus-button:focus {
+button.simple-button:focus {
     visibility: hidden;
 }

@@ -37,13 +37,17 @@ export default class Player extends Component<IPlayerProps> {
                 {<SimpleButton
                     content={'X'}
                     onClick={this.handleDeletePlayer}
+                    extraClasses={'square'}
+                    disabled={this.props.addPlayerScore === undefined}
                 />}
                 <p className="name">{this.props.name}</p>
                 <p className="score">{this.props.score}</p>
                 {<SimpleButton
                     content={'+'}
                     onClick={this.handleUpdate}
-                    disabled={this.props.addPlayerScore === undefined}/>}
+                    disabled={this.props.addPlayerScore === undefined}
+                    extraClasses={'square'}
+                />}
             </li>
         );
     }

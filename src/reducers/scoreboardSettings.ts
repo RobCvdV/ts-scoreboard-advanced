@@ -1,11 +1,22 @@
 import { IScoreboardSettings } from "../entities/scoreboardSettings";
 import { createReducer } from "typesafe-actions";
 import { TScoreboardSettingsActions } from "../actions";
-import { setSelectedPlayerId, toggleIsAddingRandomScores } from "../actions/scoreboardSettings";
+import {
+    setSelectedPlayerId,
+    setIsAddingRandomScores,
+    toggleIsAddingRandomScores
+} from "../actions/scoreboardSettings";
+import { startRandomlyAddingPlayerScores } from "../actions/players";
 
-const initialState: IScoreboardSettings = {
+export const initialState: IScoreboardSettings = {
     isAddingRandomScores: false,
-    selectedPlayerId: null
+    selectedPlayerId: null,
+    randomlyAddingPlayerScoresSettings: {
+        amountMax: 50,
+        intervalInSeconds: 200,
+        exponentialAdding: 3,
+        hitChance: 100
+    }
 }
 
 // type IRootAction = ActionType<typeof actions>;
@@ -15,8 +26,12 @@ const reducer = createReducer<IScoreboardSettings, TScoreboardSettingsActions>(i
         (state: IScoreboardSettings, action): IScoreboardSettings => {
         return {...state, selectedPlayerId: action.payload}
     })
-    .handleAction(toggleIsAddingRandomScores,
-        (state): IScoreboardSettings => {
+    .handleAction(setIsAddingRandomScores,
+        (state, action): IScoreboardSettings => {
+        startRandomlyAddingPlayerScores(state.randomlyAddingPlayerScoresSettings);
+        return {...state, isAddingRandomScores: action.payload}
+    })
+    .handleAction(toggleIsAddingRandomScores, state => {
         return {...state, isAddingRandomScores: !state.isAddingRandomScores}
     });
 

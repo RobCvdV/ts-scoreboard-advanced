@@ -22,7 +22,11 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-observable": "^1.2.0",
     "redux-persist": "^6.0.0",
+    "redux-watch": "^1.1.1",
+    "rxjs": "^6.5.4",
     "superagent": "^5.2.1",
     "typesafe-actions": "^5.1.0",
     "typescript": "^3.7.5"
