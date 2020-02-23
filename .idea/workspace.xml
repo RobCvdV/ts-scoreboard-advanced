@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="769465e7-409e-4074-b17e-0b3e9b08135d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/engines/randomPlayerScoreAddingEngine.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/epics/scoreboardEpics.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/watch/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/watch/scoreboardSettings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/players.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/players.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/scoreboardSettings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/scoreboardSettings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Player.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ScoreRandomAdd.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Scoreboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scoreboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Scoreboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scoreboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ScoreboardContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScoreboardContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SimpleButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SimpleButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ToggleButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToggleButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/engines/randomPlayerScoreAdding.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/epics/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/player.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/scoreboardSettings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/scoreboardSettings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/players.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/players.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/scoreboardSettings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/scoreboardSettings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="769465e7-409e-4074-b17e-0b3e9b08135d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582273405377</updated>
       <workItem from="1582273406559" duration="106000" />
-      <workItem from="1582299478639" duration="21448000" />
+      <workItem from="1582299478639" duration="21940000" />
     </task>
     <task id="LOCAL-00001" summary="wip: moving random score adding as an engine out of the UI container">
       <created>1582386372326</created>
@@ -103,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582386372326</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Epics ditched for now.&#10;Actions that start actions used&#10;Action that toggle a engine that dispatches actions over time&#10;engine and triggers moved to the reducers&#10;watcher for settings value changes to trigger other actions&#10;init watcher on startup and triggering on loaded settings.">
+      <created>1582493736649</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582493736649</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,17 +91,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wip: moving random score adding as an engine out of the UI container" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: moving random score adding as an engine out of the UI container" />
+    <MESSAGE value="Epics ditched for now.&#10;Actions that start actions used&#10;Action that toggle a engine that dispatches actions over time&#10;engine and triggers moved to the reducers&#10;watcher for settings value changes to trigger other actions&#10;init watcher on startup and triggering on loaded settings." />
+    <option name="LAST_COMMIT_MESSAGE" value="Epics ditched for now.&#10;Actions that start actions used&#10;Action that toggle a engine that dispatches actions over time&#10;engine and triggers moved to the reducers&#10;watcher for settings value changes to trigger other actions&#10;init watcher on startup and triggering on loaded settings." />
   </component>
   <component name="WindowStateProjectService">
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582299632697">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1582299632697" />
-    <state x="326" y="139" key="CommitChangelistDialog2" timestamp="1582386372197">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2" timestamp="1582493736476">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="326" y="139" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582386372197" />
+    <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493736476" />
+    <state x="1081" y="615" key="Github.ShareDialog" timestamp="1582493963401">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1081" y="615" key="Github.ShareDialog/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493963401" />
     <state width="2516" height="408" key="GridCell.Tab.0.bottom" timestamp="1582492547668">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -142,6 +128,10 @@
     </state>
     <state width="1636" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582392643060" />
     <state width="2516" height="408" key="GridCell.Tab.0.right/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582492547667" />
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1582493804707">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493804707" />
     <state x="100" y="123" width="1480" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582300255671">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
