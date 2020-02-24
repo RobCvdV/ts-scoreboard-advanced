@@ -5,8 +5,7 @@ import watchers from './watch';
 // import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 // @ts-ignore
 import createIdbStorage from '@piotr-cz/redux-persist-idb-storage/src';
-
-import rootReducer, {initialState} from "./reducers";
+import {rootReducer, initialState} from "./reducers";
 
 const indexedDbStorage = createIdbStorage({
     name: 'Scoreboard-redux-persist-indexed-db',

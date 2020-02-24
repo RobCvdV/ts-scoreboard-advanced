@@ -10,7 +10,7 @@ export interface IRootState {
     scoreboardSettings: IScoreboardSettings;
 }
 
-export default combineReducers({
+export const rootReducer = combineReducers({
     players, scoreboardSettings
 });
 
