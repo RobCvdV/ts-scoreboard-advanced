@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="769465e7-409e-4074-b17e-0b3e9b08135d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/players.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/players.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ScoreboardContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScoreboardContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/epics/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/unused/epics/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/epics/scoreboardEpics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/unused/epics/scoreboardEpics.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582273405377</updated>
       <workItem from="1582273406559" duration="106000" />
-      <workItem from="1582299478639" duration="24242000" />
+      <workItem from="1582299478639" duration="25012000" />
     </task>
     <task id="LOCAL-00001" summary="wip: moving random score adding as an engine out of the UI container">
       <created>1582386372326</created>
@@ -111,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582494176646</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cleaning up">
+      <created>1582541966256</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582541966257</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +120,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wip: moving random score adding as an engine out of the UI container" />
     <MESSAGE value="Epics ditched for now.&#10;Actions that start actions used&#10;Action that toggle a engine that dispatches actions over time&#10;engine and triggers moved to the reducers&#10;watcher for settings value changes to trigger other actions&#10;init watcher on startup and triggering on loaded settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Epics ditched for now.&#10;Actions that start actions used&#10;Action that toggle a engine that dispatches actions over time&#10;engine and triggers moved to the reducers&#10;watcher for settings value changes to trigger other actions&#10;init watcher on startup and triggering on loaded settings." />
+    <MESSAGE value="cleaning up" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning up" />
   </component>
   <component name="WindowStateProjectService">
     <state x="880" y="397" key="#Notifications" timestamp="1582494212202">
@@ -131,34 +132,35 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1582299632697" />
-    <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2" timestamp="1582494176551">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2" timestamp="1582541966106">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="326" y="139" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582386372197" />
+    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582541966106" />
     <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494176551" />
-    <state x="1081" y="615" key="Github.ShareDialog" timestamp="1582493963401">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="709" y="452" key="Github.ShareDialog" timestamp="1582542026612">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state x="709" y="452" key="Github.ShareDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1582542026612" />
     <state x="1081" y="615" key="Github.ShareDialog/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493963401" />
-    <state width="2516" height="408" key="GridCell.Tab.0.bottom" timestamp="1582541883498">
+    <state width="1636" height="279" key="GridCell.Tab.0.bottom" timestamp="1582542152749">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="2516" height="408" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582541883498" />
+    <state width="1636" height="279" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582542152749" />
     <state width="2516" height="408" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213746" />
-    <state width="2516" height="408" key="GridCell.Tab.0.center" timestamp="1582541883497">
+    <state width="1636" height="279" key="GridCell.Tab.0.center" timestamp="1582542152748">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="2516" height="408" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582541883497" />
+    <state width="1636" height="279" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582542152748" />
     <state width="2516" height="408" key="GridCell.Tab.0.center/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213745" />
-    <state width="2516" height="408" key="GridCell.Tab.0.left" timestamp="1582541883496">
+    <state width="1636" height="279" key="GridCell.Tab.0.left" timestamp="1582542152747">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="2516" height="408" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582541883496" />
+    <state width="1636" height="279" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582542152747" />
     <state width="2516" height="408" key="GridCell.Tab.0.left/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213744" />
-    <state width="2516" height="408" key="GridCell.Tab.0.right" timestamp="1582541883497">
+    <state width="1636" height="279" key="GridCell.Tab.0.right" timestamp="1582542152748">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="2516" height="408" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582541883497" />
+    <state width="1636" height="279" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582542152748" />
     <state width="2516" height="408" key="GridCell.Tab.0.right/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213746" />
     <state x="789" y="370" key="SettingsEditor" timestamp="1582494312163">
       <screen x="0" y="23" width="2560" height="1417" />
