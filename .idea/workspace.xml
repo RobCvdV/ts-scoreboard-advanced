@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="769465e7-409e-4074-b17e-0b3e9b08135d" name="Default Changelist" comment="" />
+    <list default="true" id="769465e7-409e-4074-b17e-0b3e9b08135d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +18,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="66721b59-e5fa-4f8e-aebb-e6cb585a4891" />
+  </component>
   <component name="ProjectId" id="1Y6qUIyq83Ayb3UFzmVtqSNHWVU" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -37,6 +49,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -67,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582273405377</updated>
       <workItem from="1582273406559" duration="106000" />
-      <workItem from="1582299478639" duration="21940000" />
+      <workItem from="1582299478639" duration="23218000" />
     </task>
     <task id="LOCAL-00001" summary="wip: moving random score adding as an engine out of the UI container">
       <created>1582386372326</created>
@@ -83,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582493736649</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Epics ditched for now.&#10;Actions that start actions used&#10;Action that toggle a engine that dispatches actions over time&#10;engine and triggers moved to the reducers&#10;watcher for settings value changes to trigger other actions&#10;init watcher on startup and triggering on loaded settings.">
+      <created>1582494176646</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582494176646</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,43 +115,51 @@
     <option name="LAST_COMMIT_MESSAGE" value="Epics ditched for now.&#10;Actions that start actions used&#10;Action that toggle a engine that dispatches actions over time&#10;engine and triggers moved to the reducers&#10;watcher for settings value changes to trigger other actions&#10;init watcher on startup and triggering on loaded settings." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="880" y="397" key="#Notifications" timestamp="1582494212202">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="880" y="397" key="#Notifications/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494212202" />
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582299632697">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1582299632697" />
-    <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2" timestamp="1582493736476">
+    <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2" timestamp="1582494176551">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="326" y="139" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582386372197" />
-    <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493736476" />
+    <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494176551" />
     <state x="1081" y="615" key="Github.ShareDialog" timestamp="1582493963401">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1081" y="615" key="Github.ShareDialog/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493963401" />
-    <state width="2516" height="408" key="GridCell.Tab.0.bottom" timestamp="1582492547668">
+    <state width="2516" height="408" key="GridCell.Tab.0.bottom" timestamp="1582494213746">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1636" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582392643060" />
-    <state width="2516" height="408" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582492547668" />
-    <state width="2516" height="408" key="GridCell.Tab.0.center" timestamp="1582492547666">
+    <state width="2516" height="408" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213746" />
+    <state width="2516" height="408" key="GridCell.Tab.0.center" timestamp="1582494213745">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1636" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582392643060" />
-    <state width="2516" height="408" key="GridCell.Tab.0.center/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582492547666" />
-    <state width="2516" height="408" key="GridCell.Tab.0.left" timestamp="1582492547666">
+    <state width="2516" height="408" key="GridCell.Tab.0.center/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213745" />
+    <state width="2516" height="408" key="GridCell.Tab.0.left" timestamp="1582494213744">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1636" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582392643059" />
-    <state width="2516" height="408" key="GridCell.Tab.0.left/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582492547666" />
-    <state width="2516" height="408" key="GridCell.Tab.0.right" timestamp="1582492547667">
+    <state width="2516" height="408" key="GridCell.Tab.0.left/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213744" />
+    <state width="2516" height="408" key="GridCell.Tab.0.right" timestamp="1582494213746">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1636" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582392643060" />
-    <state width="2516" height="408" key="GridCell.Tab.0.right/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582492547667" />
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1582493804707">
+    <state width="2516" height="408" key="GridCell.Tab.0.right/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213746" />
+    <state x="789" y="370" key="SettingsEditor" timestamp="1582494312163">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="880" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493804707" />
+    <state x="789" y="370" key="SettingsEditor/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494312163" />
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2" timestamp="1582494539590">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="880" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494539590" />
     <state x="100" y="123" width="1480" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582300255671">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
