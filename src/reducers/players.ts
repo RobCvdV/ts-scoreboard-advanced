@@ -6,7 +6,7 @@ import {
     addPlayerScore,
     deletePlayer,
     addPlayerWithName,
-    setPlayerScore, startRandomlyAddingPlayerScores, stopRandomlyAddingPlayerScores
+    setPlayerScore, startRandomlyAddingPlayerScores, stopRandomlyAddingPlayerScores, deletePlayers, deleteAllPlayers
 } from "../actions/players";
 import { RandomPlayerScoreAddingEngine } from "../engines/randomPlayerScoreAddingEngine";
 import { store } from "../store";
@@ -30,7 +30,8 @@ const reducer = createReducer<IPlayersState, TPlayersActions>(initialState)
                 }
             })
         }
-    }).handleAction(setPlayerScore, (state, action): IPlayersState => {
+    })
+    .handleAction(setPlayerScore, (state, action): IPlayersState => {
         return {
             ...state,
             playerList: state.playerList.map(player => {
@@ -70,6 +71,15 @@ const reducer = createReducer<IPlayersState, TPlayersActions>(initialState)
             ...state,
             playerList: state.playerList.filter(pl => pl.id !== action.payload)
         }
+    })
+    .handleAction(deletePlayers, (state, action) => {
+        return {
+            ...state,
+            playerList: state.playerList.filter(pl => !action.payload.includes(pl.id))
+        }
+    })
+    .handleAction(deleteAllPlayers, state => {
+        return { ...state, playerList: []}
     })
     .handleAction(startRandomlyAddingPlayerScores, (state, action) => {
         const {amountMax, intervalInSeconds, exponentialAdding, hitChance} = action.payload;
