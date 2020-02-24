@@ -13,6 +13,11 @@ export interface IPlayerScorePayload  {
     amount: number;
 }
 
+export interface IPlayerNamePayload {
+    playerId: number;
+    name: string;
+}
+
 export interface IAddRandomScoresPayload {
     amountMax?: number;
     intervalInSeconds?: number;

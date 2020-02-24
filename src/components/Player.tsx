@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './Player.css';
 import SimpleButton from "./SimpleButton";
 import { IPlayer } from "../entities/player";
+import EditField from "./EditField";
 
 export interface IPlayerProps extends IPlayer {
     addPlayerScore?: (id: number, add: number) => void;
     deletePlayer?: (id: number) => void;
+    setPlayerName?: (id: number, name: string) => void;
 }
 
 export default class Player extends Component<IPlayerProps> {
@@ -13,38 +15,25 @@ export default class Player extends Component<IPlayerProps> {
         scorePerHit: 1,
     };
 
-    public handleUpdate = () => {
-        if (!this.props.addPlayerScore) return;
-
-        const { id } = this.props;
-        if (!id) return;
-
-        this.props.addPlayerScore(id, 1);
-    };
-
-    public handleDeletePlayer = () => {
-        if (!this.props.deletePlayer) return;
-
-        const { id } = this.props;
-        if (!id) return;
-
-        this.props.deletePlayer(id);
-    }
-
     public render() {
+
+
         return (
             <li className="player">
                 {<SimpleButton
                     content={'X'}
-                    onClick={this.handleDeletePlayer}
+                    onClick={() => {this.props.deletePlayer!(this.props.id)}}
                     extraClasses={'square'}
                     disabled={this.props.addPlayerScore === undefined}
                 />}
-                <p className="name">{this.props.name}</p>
+                <EditField
+                    contentOriginal={this.props.name}
+                    editingCompleted={(name:string) => {this.props.setPlayerName!(this.props.id, name)}}
+                />
                 <p className="score">{this.props.score}</p>
                 {<SimpleButton
                     content={'+'}
-                    onClick={this.handleUpdate}
+                    onClick={() => {this.props.addPlayerScore!(this.props.id, 1)}}
                     disabled={this.props.addPlayerScore === undefined}
                     extraClasses={'square'}
                 />}

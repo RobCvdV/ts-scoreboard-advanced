@@ -27,7 +27,13 @@
 }
 
 .add-player input:hover, .add-player input:focus {
+    cursor: pointer;
     background-color: #181c24;
+
+    box-shadow: inset 0 0 0 1pt #fff;
+    text-shadow: 0 0 1pt #ffffff;
+    /*font-weight: bolder;*/
+    color: white;
 }
 
 .add-player input[type=text] {

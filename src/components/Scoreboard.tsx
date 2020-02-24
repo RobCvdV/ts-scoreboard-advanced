@@ -16,6 +16,7 @@ export interface IScoreboardProps {
     toggleRandomAddHandler: () => void;
     resetPlayerScores: () => void;
     clearBoard:() => void;
+    setPlayerName:(id: number, name: string) => void;
 }
 
 export default class Scoreboard extends Component<IScoreboardProps> {
@@ -23,8 +24,9 @@ export default class Scoreboard extends Component<IScoreboardProps> {
     public renderPlayer = (player: IPlayer) => (<Player
         addPlayerScore={this.props.isRandomizing ? undefined : this.props.addPlayerScore}
         deletePlayer={this.props.deletePlayer}
+        setPlayerName={this.props.setPlayerName}
         key={player.id}
-        //rest of the porps
+        //rest of the props
         {...player}
     />);
 
@@ -36,7 +38,7 @@ export default class Scoreboard extends Component<IScoreboardProps> {
                     <Title content={'Scoreboard'}/>
                     <div className={'scoreboard-menu-buttons'}>
                         <ToggleButton
-                            content={'See scores coming in'}
+                            content={'Generate scores'}
                             state={this.props.isRandomizing ? 'on' : 'off'}
                             onClick={this.props.toggleRandomAddHandler}/>
                         <SimpleButton content={'Reset Scores'} onClick={this.props.resetPlayerScores} />

@@ -26,7 +26,7 @@ export default class AddPlayer extends Component<IAddPlayerProps, IAddPlayerStat
                             value={this.state.name}
                         />
                     </label>
-                    <input type="submit" value="Add"/>
+                    <input type="submit" value="Add" className={"simple-button"}/>
                 </form>
             </div>
         );

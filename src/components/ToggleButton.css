@@ -50,15 +50,19 @@ button.toggle-button > .toggle-button-light.on {
 button.toggle-button:hover {
     cursor: pointer;
     background-color: #181c24;
+    text-shadow: 0 0 1pt #ffffff;
+    box-shadow: inset 0 0 0 1pt #fff;
 }
 button.toggle-button:hover > .toggle-button-light.off{
     /*border-color: lightgreen;*/
     /*background: lightgreen;*/
-    box-shadow: inset 0 0 .5em lightgreen;
+    /*box-shadow: inset 0 0 .5em lightgreen;*/
+    box-shadow: inset 0 0 0 1pt #fff;
 }
 button.toggle-button:hover > .toggle-button-light.on {
     /*background: black;*/
-    box-shadow: inset 0 0 .5em black;
+    /*box-shadow: inset 0 0 .5em black;*/
+    box-shadow: inset 0 0 0 1pt #fff;
 }
 
 button.toggle-button:focus {

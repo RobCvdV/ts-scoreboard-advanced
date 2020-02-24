@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="769465e7-409e-4074-b17e-0b3e9b08135d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/EditField.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditField.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/players.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/players.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddPlayer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddPlayer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddPlayer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddPlayer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Player.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Scoreboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scoreboard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ScoreboardContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScoreboardContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SimpleButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToggleButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToggleButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/player.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/players.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/players.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -46,6 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582273405377</updated>
       <workItem from="1582273406559" duration="106000" />
-      <workItem from="1582299478639" duration="27872000" />
+      <workItem from="1582299478639" duration="34433000" />
     </task>
     <task id="LOCAL-00001" summary="wip: moving random score adding as an engine out of the UI container">
       <created>1582386372326</created>
@@ -122,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582542778158</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cleaning up types and mapToDispatch now has nested dispatch calls to all actions, without manually settings every action">
+      <created>1582546341122</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582546341122</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +150,8 @@
     <MESSAGE value="wip: moving random score adding as an engine out of the UI container" />
     <MESSAGE value="Epics ditched for now.&#10;Actions that start actions used&#10;Action that toggle a engine that dispatches actions over time&#10;engine and triggers moved to the reducers&#10;watcher for settings value changes to trigger other actions&#10;init watcher on startup and triggering on loaded settings." />
     <MESSAGE value="cleaning up" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning up" />
+    <MESSAGE value="cleaning up types and mapToDispatch now has nested dispatch calls to all actions, without manually settings every action" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning up types and mapToDispatch now has nested dispatch calls to all actions, without manually settings every action" />
   </component>
   <component name="WindowStateProjectService">
     <state x="880" y="397" key="#Notifications" timestamp="1582494212202">
@@ -143,44 +162,44 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="304" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1582299632697" />
-    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2" timestamp="1582542778066">
+    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2" timestamp="1582546340978">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582542778066" />
+    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582546340978" />
     <state x="497" y="183" width="1568" height="1041" key="CommitChangelistDialog2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494176551" />
     <state x="709" y="452" key="Github.ShareDialog" timestamp="1582542026612">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="709" y="452" key="Github.ShareDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1582542026612" />
     <state x="1081" y="615" key="Github.ShareDialog/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493963401" />
-    <state width="1636" height="279" key="GridCell.Tab.0.bottom" timestamp="1582545498355">
+    <state width="1636" height="166" key="GridCell.Tab.0.bottom" timestamp="1582551541519">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="279" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582545498355" />
+    <state width="1636" height="166" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582551541519" />
     <state width="2516" height="408" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213746" />
-    <state width="1636" height="279" key="GridCell.Tab.0.center" timestamp="1582545498354">
+    <state width="1636" height="166" key="GridCell.Tab.0.center" timestamp="1582551541518">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="279" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582545498354" />
+    <state width="1636" height="166" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582551541518" />
     <state width="2516" height="408" key="GridCell.Tab.0.center/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213745" />
-    <state width="1636" height="279" key="GridCell.Tab.0.left" timestamp="1582545498354">
+    <state width="1636" height="166" key="GridCell.Tab.0.left" timestamp="1582551541518">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="279" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582545498354" />
+    <state width="1636" height="166" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582551541518" />
     <state width="2516" height="408" key="GridCell.Tab.0.left/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213744" />
-    <state width="1636" height="279" key="GridCell.Tab.0.right" timestamp="1582545498355">
+    <state width="1636" height="166" key="GridCell.Tab.0.right" timestamp="1582551541519">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="279" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582545498355" />
+    <state width="1636" height="166" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582551541519" />
     <state width="2516" height="408" key="GridCell.Tab.0.right/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494213746" />
     <state x="789" y="370" key="SettingsEditor" timestamp="1582494312163">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="789" y="370" key="SettingsEditor/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494312163" />
-    <state x="578" y="348" key="Vcs.Push.Dialog.v2" timestamp="1582542790247">
+    <state x="578" y="348" key="Vcs.Push.Dialog.v2" timestamp="1582546346460">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="578" y="348" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582542790247" />
+    <state x="578" y="348" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582546346460" />
     <state x="880" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582494539590" />
     <state x="100" y="123" width="1480" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582300255671">
       <screen x="0" y="23" width="1680" height="1027" />
@@ -190,24 +209,24 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="623" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582540936353" />
-    <state x="498" y="293" width="837" height="550" key="find.popup" timestamp="1582541828713">
+    <state x="498" y="293" width="837" height="550" key="find.popup" timestamp="1582547075212">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="498" y="293" width="837" height="550" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582541828713" />
+    <state x="498" y="293" width="837" height="550" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582547075212" />
     <state x="759" y="396" width="1276" height="759" key="find.popup/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582492543194" />
-    <state width="417" height="116" key="javadoc.popup.new" timestamp="1582546063260">
+    <state width="417" height="116" key="javadoc.popup.new" timestamp="1582552985793">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="417" height="116" key="javadoc.popup.new/0.23.1680.1027@0.23.1680.1027" timestamp="1582546063260" />
+    <state width="417" height="116" key="javadoc.popup.new/0.23.1680.1027@0.23.1680.1027" timestamp="1582552985793" />
     <state width="634" height="160" key="javadoc.popup.new/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582493482191" />
     <state x="489" y="259" width="700" height="530" key="recent.locations.popup" timestamp="1582390928921">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="489" y="259" width="700" height="530" key="recent.locations.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582390928921" />
-    <state x="770" y="336" width="1021" height="933" key="search.everywhere.popup" timestamp="1582466795937">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1582547416518">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582390291840" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582547416518" />
     <state x="770" y="336" width="1021" height="933" key="search.everywhere.popup/0.23.2560.1417/2560.413.1680.1027@0.23.2560.1417" timestamp="1582466795937" />
   </component>
 </project>

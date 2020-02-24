@@ -1,0 +1,28 @@
+input.edit-field {
+    flex: 1;
+    font-size: 120%;
+    border: 1px solid #fff;
+    padding: 10px 5px;
+    background-color: #282c34;
+    color: #fff;
+}
+
+
+input.edit-field:hover,
+input.edit-field.editing{
+    cursor: pointer;
+    background-color: #181c24;
+
+    box-shadow: inset 0 0 0 1pt #fff;
+    text-shadow: 0 0 1pt #ffffff;
+    /*font-weight: bolder;*/
+    color: white;
+}
+
+input.edit-field:read-only{
+    border: none;
+}
+
+input.edit-field[type=text] {
+    max-width: 300px;
+}
